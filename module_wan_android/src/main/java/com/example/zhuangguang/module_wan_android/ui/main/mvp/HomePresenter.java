@@ -11,7 +11,10 @@ import com.example.zhuangguang.module_wan_android.bean.Article;
 import com.example.zhuangguang.module_wan_android.bean.BannerInfo;
 import com.example.zhuangguang.module_wan_android.bean.WXNumber;
 import com.example.zhuangguang.module_wan_android.ui.main.mvp.contract.HomeContract;
+import com.example.zhuangguang.module_wan_android.ui.project.ProjectActivity;
+import com.example.zhuangguang.module_wan_android.ui.search.SearchActivity;
 import com.example.zhuangguang.module_wan_android.ui.setup.SystemActivity;
+import com.example.zhuangguang.module_wan_android.ui.wxnumber.WXNumberActivity;
 
 import java.util.ArrayList;
 import java.util.List;

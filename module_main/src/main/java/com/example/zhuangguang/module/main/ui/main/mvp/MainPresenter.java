@@ -6,6 +6,7 @@ import com.example.zhuangguang.common.bean.Template;
 import com.example.zhuangguang.common.constants.ARouterConfig;
 import com.example.zhuangguang.common.net.callback.OnResultObjectCallBack;
 import com.example.zhuangguang.module.main.R;
+import com.example.zhuangguang.module.main.ui.hortab.OrderListActivity;
 import com.example.zhuangguang.module.main.ui.main.mvp.contract.MainContract;
 import com.orhanobut.logger.Logger;
 
@@ -66,7 +67,7 @@ public class MainPresenter extends BasePresenter<MainContract.Model,MainContract
             //造伪数据
             List<Template> list = new ArrayList<>();
             list.add(new Template("商城", R.drawable.main_icon_17, ARouterConfig.MARKET_MAIN_ACTIVITY, 1, "电商商品模板，和JD相似"));
-//            list.add(new Template("水平Tab", R.drawable.main_icon_8, OrderListActivity.class, "水平滑动选项卡"));
+            list.add(new Template("水平Tab", R.drawable.main_icon_8, OrderListActivity.class, "水平滑动选项卡"));
 //            list.add(new Template("下拉刷新", R.drawable.main_icon_9, RefreshStringActivity.class, "下拉刷新，上拉加载更多，可自定义加载View"));
 //            list.add(new Template("多功能选择器", R.drawable.main_icon_10, SelectorActivity.class, "时间、日期、地址、自定义数据滑动选择器"));
 //            list.add(new Template("数量加减控件", R.drawable.main_icon_11, CountViewActivity.class, "数量加减、支持手动输入"));

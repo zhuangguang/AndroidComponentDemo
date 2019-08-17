@@ -65,6 +65,11 @@ public class FragmentPagerAdapter extends FragmentStatePagerAdapter{
         super.startUpdate(container);
     }
 
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return titles.get(position).getTitle();
+    }
+
     /**
      * 使用两参构造方法 必须重写 该方法 返回对应的Fragment
      */

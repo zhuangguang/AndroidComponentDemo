@@ -80,7 +80,12 @@ public class ProjectActivity extends RefreshListActivity<ProjectPresenter> imple
 
     @Override
     public void onProjectTypeClick(Classification classification) {
-        ActivityToActivity.toWebView(mContext, projects.get(position).getLink());
+        //选择了一个分类
+        if (classification != null) {
+            this.currentClassification = classification;
+            setTitleText(currentClassification.getName());
+            onRefresh();
+        }
     }
 
     @Override
